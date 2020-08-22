@@ -1,0 +1,98 @@
+//void *addNode(Node **cur, Node node, Node **root){
+//	
+//	if(!(*cur)){
+//		**root = node;
+//		*cur = *root;
+//	}else{
+//		Node *newNode = malloc(sizeof(Node));
+//		*newNode = node;
+//		Node *tmp;
+//		
+//		if(node.ipr <= (*cur)->tpr){
+//			while((*cur)->parent){
+//			if((*cur)->tpr!=0 || node.ipr!=0){
+//				if((*cur)->parent->tpr < node.ipr){
+//					break;
+//				}
+//				(*cur) = (*cur)->parent;
+//			}else{
+//				break;
+//			}
+//			} 
+//			
+//				if((*cur)->tpr!=0 || node.ipr!=0){
+//				//ubaciti iznad cur
+//				if((*cur)->parent){
+//					if((*cur)->parent->left == *cur){
+//						newNode->parent = (*cur)->parent;
+//						newNode->left = *cur;
+//						(*cur)->parent->left = newNode;
+//						(*cur)->parent = newNode;
+//						*cur = newNode;
+//						
+//					}else{
+//						newNode->parent = (*cur)->parent;
+//						newNode->left = *cur;
+//						(*cur)->parent->right = newNode;
+//						(*cur)->parent = newNode;
+//						*cur = newNode;
+//						
+//					}
+//					
+//				}else{
+//					newNode->left = (*cur);
+//					*cur = newNode;
+//					*root = newNode;
+//					
+//					}
+//				}else{
+//					free(newNode);
+//					if((*cur)->parent){
+//						if((*cur)->parent->left == *cur){
+//							(*cur)->parent->left = (*cur)->right;
+//							(*cur)->right->parent = (*cur)->right;
+//							tmp = *cur;
+//							*cur = (*cur)->parent;
+//							free(tmp);
+//						}else{
+//							(*cur)->parent->right = (*cur)->right;
+//							(*cur)->right->parent = (*cur)->parent;
+//							tmp = *cur;
+//							*cur = (*cur)->parent;
+//							free(tmp);
+//						}
+//					}else{
+//						(*cur) = (*cur)->left;
+//						(*cur)->parent = NULL;
+//						free(*root);
+//						*root = *cur;
+//					}
+//				}
+//		}else{
+//			while(node.ipr > (*cur)->tpr && (*cur)->right) (*cur) = (*cur)->right;
+//			if((*cur)->right){
+//				tmp = (*cur)->parent;
+//				(*cur)->parent = newNode;
+//				newNode->parent = tmp;
+//				newNode->left = (*cur);
+//				(*cur) = newNode;
+//			
+//			}else{
+//				if(node.ipr == 8){
+//					(*cur)->left = newNode;
+//					newNode->parent = (*cur);
+//					(*cur) = newNode;
+//				}else{
+//					(*cur)->right = newNode;
+//					newNode->parent = (*cur);
+//					(*cur) = newNode;
+//				}
+//				
+//			}
+//		}
+//		
+//		
+//		
+//}
+//
+//}

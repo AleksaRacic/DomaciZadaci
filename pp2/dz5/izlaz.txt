@@ -1,0 +1,80 @@
+begin:vcard
+fn:Ivan Jovanovic
+n:Jovanovic,Ivan
+version:2.1
+end:vcard
+
+begin:vcard
+fn:Marko Misic
+n:Misic,Marko
+org:Elektrotehnicki fakultet;RTI
+adr:;;Bulevar kralja Aleksandra 73;Beograd;;11000;
+version:2.1
+end:vcard
+
+begin:vcard
+fn:Nikola Nikolic
+n:Nikolic,Nikola
+version:2.1
+end:vcard
+
+begin:vcard
+fn:oo1pp2 Lista
+n:Lista,oo1pp2
+version:2.1
+end:vcard
+
+begin:vcard
+fn:Petar Peric
+n:Peric,Petar
+org:Elektrotehnicki fakultet;RTI
+adr:;;Bulevar Kralja Aleksandra;Beograd;Beograd;11000;Srbija
+version:2.1
+end:vcard
+
+begin:vcard
+fn:Marko Misic
+n:Misic,Marko
+version:2.1
+end:vcard
+
+begin:vcard
+fn:oo1pp2 Lista
+n:Lista,oo1pp2
+version:2.1
+end:vcard
+
+begin:vcard
+fn:Mika Petrovic
+n:Petrovic,Mika
+version:2.1
+end:vcard
+
+begin:vcard
+fn:Radovan Radic
+n:Radic,Radovan
+org:Zmaj Software
+version:2.1
+end:vcard
+
+begin:vcard
+fn:Nikola Teslic
+n:Teslic,Nikola
+version:2.1
+end:vcard
+
+begin:vcard
+fn:Pero Antic
+n:Antic,Pero
+org:MK Basketball
+version:2.1
+end:vcard
+
+begin:vcard
+fn:c d
+n:b,a
+org:i;h
+adr:;;t;Work City;Work State;e;r
+version:2.1
+end:vcard
+

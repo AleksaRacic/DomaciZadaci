@@ -1,0 +1,80 @@
+BEGIN:VCARD
+VERSION:3.0
+N:Jovanovic;Ivan;;;
+FN:Ivan Jovanovic
+TEL;TYPE=VOICE,HOME;VALUE=text:011/310-2955
+ADR;TYPE=HOME:Tosin bunar 241
+ADR;TYPE=HOME:;;Beograd;;;
+END:VCARD
+BEGIN:VCARD
+VERSION:3.0
+N:Misic;Marko;;;
+FN:Marko Misic
+ORG:Elektrotehnicki fakultet;RTI
+TITLE:Asistent
+END:VCARD
+BEGIN:VCARD
+VERSION:3.0
+N:Nikolic;Nikola;;;
+FN:Nikola Nikolic
+END:VCARD
+BEGIN:VCARD
+VERSION:3.0
+N:Lista;oo1pp2;;;
+FN:oo1pp2 Lista
+END:VCARD
+BEGIN:VCARD
+VERSION:3.0
+N:Peric;Petar;;;
+FN:Petar Peric
+NICKNAME:Peca
+ORG:Elektrotehnicki fakultet;RTI
+TITLE:Dipl. ing
+TEL;TYPE=VOICE,HOME;VALUE=text:013/777-555
+ADR;TYPE=HOME:Programskog jezika C 38
+ADR;TYPE=HOME:;;Pancevo;Vojvodina;;Srbija
+END:VCARD
+BEGIN:VCARD
+VERSION:3.0
+N:Misic;Marko;;;
+FN:Marko Misic
+END:VCARD
+BEGIN:VCARD
+VERSION:3.0
+N:Lista;oo1pp2;;;
+FN:oo1pp2 Lista
+END:VCARD
+BEGIN:VCARD
+VERSION:3.0
+N:Petrovic;Mika;;;
+FN:Mika Petrovic
+END:VCARD
+BEGIN:VCARD
+VERSION:3.0
+N:Radic;Radovan;;;
+FN:Radovan Radic
+NICKNAME:Rale Zmaj
+ORG:Zmaj Software;
+END:VCARD
+BEGIN:VCARD
+VERSION:3.0
+N:Teslic;Nikola;;;
+FN:Nikola Teslic
+END:VCARD
+BEGIN:VCARD
+VERSION:3.0
+N:Antic;Pero;;;
+FN:Pero Antic
+ORG:MK Basketball;
+END:VCARD
+BEGIN:VCARD
+VERSION:3.0
+N:b;a;;;
+FN:a b
+NICKNAME:e
+ORG:i;h
+TITLE:g
+TEL;TYPE=VOICE,HOME;VALUE=text:j
+ADR;TYPE=HOME:n
+ADR;TYPE=HOME:;;Pancevo;q;;Srbija
+END:VCARD
