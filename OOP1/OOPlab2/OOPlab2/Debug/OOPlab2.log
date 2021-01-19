@@ -1,5 +1,3 @@
 ﻿  ZAD1.cpp
-c:\users\hp\documents\visual studio 2017\projects\ooplab2\ooplab2\zad1.cpp(135): warning C4018: '<': signed/unsigned mismatch
-c:\users\hp\documents\visual studio 2017\projects\ooplab2\ooplab2\zad1.cpp(136): warning C4018: '<': signed/unsigned mismatch
-  OOPlab2.vcxproj -> c:\users\hp\documents\visual studio 2017\Projects\OOPlab2\Debug\OOPlab2.exe
-  OOPlab2.vcxproj -> c:\users\hp\documents\visual studio 2017\Projects\OOPlab2\Debug\OOPlab2.pdb (Partial PDB)
+  OOPlab2.vcxproj -> C:\Users\HP\Documents\GitHub\DomaciZadaci\OOP1\OOPlab2\Debug\OOPlab2.exe
+  OOPlab2.vcxproj -> C:\Users\HP\Documents\GitHub\DomaciZadaci\OOP1\OOPlab2\Debug\OOPlab2.pdb (Partial PDB)

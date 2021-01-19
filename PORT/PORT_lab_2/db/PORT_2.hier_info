@@ -1,0 +1,105 @@
+|PORT_2
+HEX0_0 <= SevenSegmentInterfaceDEC:inst5.a
+clk => RisingEdge:inst.clk
+clk => RisingEdge:inst1.clk
+clk => PRandom07:random.clk
+btn0 => inst6.IN0
+btn1 => inst7.IN0
+HEX0_1 <= SevenSegmentInterfaceDEC:inst5.b
+HEX0_2 <= SevenSegmentInterfaceDEC:inst5.c
+HEX0_3 <= SevenSegmentInterfaceDEC:inst5.d
+HEX0_4 <= SevenSegmentInterfaceDEC:inst5.e
+HEX0_5 <= SevenSegmentInterfaceDEC:inst5.f
+HEX0_6 <= SevenSegmentInterfaceDEC:inst5.g
+HEX0_7 <= SevenSegmentInterfaceDEC:inst5.dp
+
+
+|PORT_2|SevenSegmentInterfaceDEC:inst5
+x3 => Mux0.IN33
+x3 => Mux1.IN33
+x3 => Mux2.IN33
+x3 => Mux3.IN33
+x3 => Mux4.IN33
+x3 => Mux5.IN33
+x3 => Mux6.IN33
+x2 => Mux0.IN34
+x2 => Mux1.IN34
+x2 => Mux2.IN34
+x2 => Mux3.IN34
+x2 => Mux4.IN34
+x2 => Mux5.IN34
+x2 => Mux6.IN34
+x1 => Mux0.IN35
+x1 => Mux1.IN35
+x1 => Mux2.IN35
+x1 => Mux3.IN35
+x1 => Mux4.IN35
+x1 => Mux5.IN35
+x1 => Mux6.IN35
+x0 => Mux0.IN36
+x0 => Mux1.IN36
+x0 => Mux2.IN36
+x0 => Mux3.IN36
+x0 => Mux4.IN36
+x0 => Mux5.IN36
+x0 => Mux6.IN36
+dot => dp.IN0
+en => Mux0.IN32
+en => Mux1.IN32
+en => Mux2.IN32
+en => Mux3.IN32
+en => Mux4.IN32
+en => Mux5.IN32
+en => Mux6.IN32
+en => dp.IN1
+a <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+b <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+c <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+d <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+e <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+f <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
+g <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
+dp <= dp.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|PORT_2|PRandom07:random
+z0 <= or7.DB_MAX_OUTPUT_PORT_TYPE
+rst => inst.IN0
+rst => inst4.IN0
+rst => and1.IN0
+rst => inst7.IN0
+rst => and11.IN0
+rst => and7.IN0
+rst => and4.IN0
+next => and3.IN1
+next => inst2.IN1
+next => inst3.IN1
+next => ne.IN0
+next => and2.IN1
+next => inst8.IN1
+next => and11.IN1
+next => and7.IN1
+next => and10.IN0
+next => and9.IN1
+next => and4.IN1
+clk => inst6.CLK
+clk => tff2.CLK
+clk => tff1.CLK
+z1 <= or5.DB_MAX_OUTPUT_PORT_TYPE
+z2 <= or4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|PORT_2|RisingEdge:inst
+input => state[1].DATAIN
+output <= output.DB_MAX_OUTPUT_PORT_TYPE
+clk => state[0].CLK
+clk => state[1].CLK
+
+
+|PORT_2|RisingEdge:inst1
+input => state[1].DATAIN
+output <= output.DB_MAX_OUTPUT_PORT_TYPE
+clk => state[0].CLK
+clk => state[1].CLK
+
+
