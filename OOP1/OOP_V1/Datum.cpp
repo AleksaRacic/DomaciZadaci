@@ -1,6 +1,4 @@
-#include "OOP_V1.h"
-
-//Datum
+#include "Datum.h"
 
 int Datum::brojDanaUMesecu(int mes) const {
 	switch (mes) {
@@ -43,33 +41,3 @@ ostream& operator<<(ostream& os, const Datum& dat) {
 	cout << dat.dan << '.' << dat.mesec << '.' << dat.godina << ".";
 	return os;
 }
-
-
-//Osoba
-
-Osoba::Osoba(char* i, char *j, const Datum& d) :ime(i), JMBG(j), dat(d) {}; //Videti da li je osoba vlasnik datuma
-
-ostream& operator<<(ostream& os, const Osoba& o) {
-	cout << "O(" << o.get_ime() << ',' << o.get_JMBG() << ',' << o.get_dat() << ")";
-	return os;
-}
-
-//Racun
-
-void Racun::uplati(Racun& rac2, int iznos) {
-	if (this->get_iznos() < iznos) throw errRac();
-
-	this->iznos -= iznos;
-	rac2 += iznos;
-}
-
-Racun& Racun::operator+=(int iz) {
-	iznos += iz;
-	return *this;
-}
-
-ostream& operator<<(ostream& os, const Racun& rac) {
-	cout << rac.get_brojRac() << ":=:" << rac.get_iznos() << rac.get_val();
-	return os;
-}
-

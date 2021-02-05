@@ -4,13 +4,18 @@
 #include "Par.h"
 
 class Mec {
+public:
 	enum Ishod { POBEDA_DOMACIN, NERESENO, POBEDA_GOST };
-	Par<Tim>* par; //preveslati ovo kako ne bi morao praviti premestajuci konstruktor
+private:
+	Par<Tim> par;
 	bool odigran;
 	Ishod ishod;
+	mutable int *prvi, *drugi;
 public:
-	Mec(Tim& gost, Tim& domacin);
-	Par<Tim>& get_par()const { return *par; }
+	
+	Mec(Par<Tim>);
+	~Mec() { delete prvi; delete drugi; }
+	const Par<Tim>& get_par() const { return par; }
 	void odigraj();
 	bool is_odigran() { return odigran; }
 	Par<int> rezultat()const;

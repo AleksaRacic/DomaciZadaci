@@ -4,14 +4,14 @@
 #include <exception>
 using namespace std;
 
-class GPrazna : exception {
+class GPrazna : public exception {
 public:
 	const char* what() const override {
 		return "Lista je prazna!";
 	}
 };
 
-class GPostfix : exception {
+class GPostfix : public exception {
 public:
 	const char* what() const override {
 		return "Greska postfix!";

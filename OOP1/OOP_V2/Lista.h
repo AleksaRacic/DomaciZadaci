@@ -20,6 +20,7 @@ public:
 
 	Lista(const Lista&) = delete;
 	void operator=(const Lista&) = delete;
+	Lista(Lista &&) = delete;
 
 	Lista<T>& push_back(const T&);
 	void next() { if(tek) tek = tek->sled; }
@@ -28,6 +29,31 @@ public:
 	T& get_elem() const;
 	void isprazni() { brisi(); };
 	
+	brisi() {
+		set_front();
+		element* tmp;
+		while (is_tek()) {
+			tmp = tek;
+			next();
+			delete tmp;
+		}
+		prvi = poslednji = nullptr;
+	}
+
+	push_back(const T& t) {
+		if (prvi == nullptr) { prvi = poslednji = new element(t); return *this; }
+
+		poslednji->sled = new element(t);
+		poslednji = poslednji->sled;
+		return *this;
+	}
+
+	get_elem() const {
+		if (!is_tek()) throw(GTek());
+		return tek->info;
+	}
+
+	~Lista() { brisi(); }
 
 
 };

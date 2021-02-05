@@ -12,5 +12,9 @@ public:
 	}
 	Generator(const Generator&) = delete;
 	void operator=(const Generator&) = delete;
+
+	Generator(Generator&&) = delete;
+	void operator=(Generator&&) = delete;
+
 	Izraz& operator()(Izraz&);
 };

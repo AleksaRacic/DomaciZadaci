@@ -7,7 +7,8 @@ public:
 	virtual char get_oznaka()const = 0;
 	virtual const char* get_natpis() const = 0;
 	friend ostream& operator<<(ostream&, const Element&);
-	virtual Element* kopiraj() = 0;
+	virtual Element* kopiraj() const = 0;
+
 };
 
 class Operand : public Element {
@@ -16,7 +17,7 @@ public:
 	Operand(const char* s) :natpis(s) {};
 	char get_oznaka()const override { return 'D'; }
 	const char* get_natpis() const { return natpis; }
-	Operand* kopiraj() override { return new Operand(*this); }
+	Operand* kopiraj() const override { return new Operand(*this); }
 };
 
 class Binarni_Operator : public Element {
@@ -30,20 +31,36 @@ public:
 class Sabiranje :public Binarni_Operator {
 public:
 	int get_priority()const override { return 1; }
-	const const char* get_natpis()const { return "+"; }
-	Sabiranje* kopiraj() override { return new Sabiranje(*this); }
+	const char* get_natpis()const { return "+"; }
+	Sabiranje* kopiraj() const override { return new Sabiranje(*this); }
 };
 
 class Leva_Zagrada : public Element {
 public:
-	const const char* get_natpis()const override { return "("; }
+	const char* get_natpis()const override { return "("; }
 	char get_oznaka() const override { return'('; }
-	Leva_Zagrada* kopiraj() override { return new Leva_Zagrada(*this); }
+	Leva_Zagrada* kopiraj() const override { return new Leva_Zagrada(*this); }
 };
 
 class Desna_Zagrada : public Element {
 public:
-	const const char* get_natpis()const override { return ")"; }
+	const char* get_natpis()const override { return ")"; }
 	char get_oznaka() const override { return')'; }
-	Desna_Zagrada* kopiraj() override { return new Desna_Zagrada(*this); }
+	Desna_Zagrada* kopiraj() const override { return new Desna_Zagrada(*this); }
+};
+
+//Test
+
+class Oduzimanje :public Binarni_Operator {
+public:
+	int get_priority()const override { return 1; }
+	const char* get_natpis()const { return "-"; }
+	Oduzimanje* kopiraj() const override { return new Oduzimanje(*this); }
+};
+
+class Mnozenje :public Binarni_Operator {
+public:
+	int get_priority() const override { return 2; }
+	const char* get_natpis()const { return "*"; }
+	Mnozenje* kopiraj() const override { return new Mnozenje(*this); }
 };

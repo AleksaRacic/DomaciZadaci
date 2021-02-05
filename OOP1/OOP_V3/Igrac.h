@@ -2,6 +2,7 @@
 #define _Igrac_H_
 
 #include <string>
+#include <iostream>
 using namespace std;
 
 class Igrac {

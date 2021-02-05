@@ -10,6 +10,9 @@ private:
 public:
 	Par(T* pr, T* dr) :prvi(pr), drugi(dr) {};
 	//da li treba unistiti pointere kada se izadje
+
+	//Ne trebaju premestajuci konstruktori jer par nije vlasnik podatka
+
 	T* get_prvi()const { return prvi; }
 	T* get_drugi()const { return drugi; }
 	T* set_prvi(T* t) { prvi = t; }

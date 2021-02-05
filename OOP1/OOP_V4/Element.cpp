@@ -6,6 +6,6 @@ ostream& operator<<(ostream& os, const Element& el) {
 }
 
 
-bool operator>(const Binarni_Operator& op1, const Binarni_Operator& op2) {
+bool operator>(const Binarni_Operator& op1, const Binarni_Operator& op2){
 	return op1.get_priority() > op2.get_priority();
 }

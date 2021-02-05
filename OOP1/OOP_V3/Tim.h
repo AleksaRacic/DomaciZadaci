@@ -17,7 +17,7 @@ public:
 	Tim(const string&, int);
 	Tim(const Tim& t) { kopiraj(t); };
 	Tim(Tim&& t) { premesti(t); }
-	~Tim() { brisi(); }
+	virtual ~Tim() { brisi(); }
 	Tim& operator=(const Tim& t) {
 		if (&t != this) {
 			brisi();

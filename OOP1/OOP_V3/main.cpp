@@ -32,14 +32,26 @@ void main() {
 		tim3.add_player(igrac, 6);
 
 		Par<Tim> par1(&tim3, &tim2);
-		cout << par1;
-
-
+		cout << par1<<endl;
+		//Dodati primer za mec
+		Par<Tim> par(&tim1, &tim3);
+		Mec m1(par);
+		cout << m1.get_par() << endl;
+		if (m1.is_odigran()) cout << "Odigran\n";
+		m1.odigraj();
+		if (m1.is_odigran()) cout << "Odigran\n";
+		Par<int> rez = m1.rezultat();
+		cout << rez << endl;
+		//Promenjena vrednost igraca
+		cout << tim1 << endl;
+		cout << tim3 << endl;
 
 	}
-	catch (exception gr) {
+	catch (exception& gr) {
 		cout << gr.what();
 	}
+
+	
 
 
 }

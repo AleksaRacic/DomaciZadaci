@@ -7,30 +7,30 @@ Izraz& Generator::operator()(Izraz& iz) {
 	while (kopija.get_br_pod()) {
 		auto tmp = *kopija;
 		if (tmp->get_oznaka() == 'D') {
-			(*izlaz) += tmp->kopiraj();
+			(*izlaz) += *tmp->kopiraj();
 		}
 		else if (tmp->get_oznaka() == 'O') {
 			while (stek.get_br_pod()) {
 				auto top = -stek;
-				if (top->get_oznaka() != '(' && top > tmp) {
-					(*izlaz) += top;
+				if ((top->get_oznaka() != '(') && !(*dynamic_cast<Binarni_Operator*>(tmp) > *dynamic_cast<Binarni_Operator*>(top))) {
+					(*izlaz) += *top;
 				}
 				else {
-					stek += top;
+					stek += *top;
 					break;
 				}
 			}
-			stek += tmp;
+			stek += *tmp;
 		}
 		else if (tmp->get_oznaka() == '(') {
-			stek += tmp->kopiraj();
+			stek += *tmp->kopiraj(); //izbrisati kopiraj
 		}
 		else if (tmp->get_oznaka() == ')') {
 			do {
 				try {
 					auto top = -stek;
 					if (top->get_oznaka() == '(') break;
-					(*izlaz) += top;
+					(*izlaz) += *top;
 
 				}
 				catch (GPrazna ex) {
@@ -39,13 +39,11 @@ Izraz& Generator::operator()(Izraz& iz) {
 			} while (1);
 
 		}
-		cout << "Stek "<< stek <<endl;
-		cout << "Izlaz " << *izlaz << endl;
 	}
 	while (stek.get_br_pod()) {
 		auto top = -stek;
 		if (top->get_oznaka() == '(') throw(GPostfix());
-		(*izlaz) += top;
+		(*izlaz) += *top;
 
 	}
 

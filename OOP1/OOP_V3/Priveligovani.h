@@ -15,7 +15,8 @@ public:
 			this->min_vr = pr.min_vr;
 		}
 	}
-	//proveriti za destruktor
+	//ne treba destruktor jer se poziv base destruktor 
+
 	Privilegovani& operator=(Privilegovani&& pr) {
 		if (this != &pr) {
 			Tim::operator=(pr);
